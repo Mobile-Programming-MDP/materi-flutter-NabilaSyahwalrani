@@ -1,6 +1,6 @@
-import 'package:easy_log/screens/home_screen.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:easy_log/screens/home_screen.dart';
 import 'package:easy_log/screens/sign_up_screen.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -60,7 +60,7 @@ class SignInScreenState extends State<SignInScreen> {
                       _errorMessage = error.toString();
                     });
                     ScaffoldMessenger.of(
-                      context, 
+                      context,
                     ).showSnackBar(SnackBar(content: Text(_errorMessage)));
                   }
                 },
